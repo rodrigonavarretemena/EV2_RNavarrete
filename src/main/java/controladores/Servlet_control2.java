@@ -4,11 +4,9 @@
  */
 package controladores;
 
-import entitles.Tbev2.java;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,8 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author rodri
  */
-@WebServlet(name = "Servlet_control", urlPatterns = {"/Servlet_control"})
-public class Servlet_control extends HttpServlet {
+public class Servlet_control2 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,52 +28,16 @@ public class Servlet_control extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
-                //####################
-        //1. recuperamos parametros
-        String strNombre = request.getParameter("inputNombre").toString();
-        String strEdad = request.getParameter("inputEdad").toString();
-        String strDireccion = request.getParameter("inputDireccion").toString();
-        String strCorreo = request.getParameter("inputCorreo").toString();
-        String strFono = request.getParameter("inputFono").toString();
-        
-        
-        
-        //2. Ingreso de informacion a base de datos
-        // creacion de clase entity
-        // creacion de clase DAO
-        // ejecucion de metodo CREATE
-        
-        //#############
-        //se crea objeto Entity
-        //Persona pers = new Persona();
-        
-        
-
-
-
-
-
-//asignamos los valores que venian del formulario a los atributos del objeto ENTITY
-        //alum.setId(Integer.parseInt(strID));
-        //alum.setNombre(strNombre);
-        //alum.setNotafinal(Integer.parseInt(strNotaFinal));
-        
-        
-        
-        
-        
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>PROCESO</title>");            
+            out.println("<title>Servlet Servlet_control2</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>PROCESO " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Servlet_control2 at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }

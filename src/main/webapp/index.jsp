@@ -24,7 +24,7 @@
               
                 <div class="col-7">
                     <label for="inputNombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="inputNombre" placeholder="Juan Perez" required>
+                    <input type="text" class="form-control" name="inputNombre" placeholder="francisca navarrete" required>
                 </div>
               
                 
